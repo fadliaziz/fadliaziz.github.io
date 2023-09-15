@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;;
+}
+
+body{
+    background-color: #26577C;
+}
+
+.container-navbar{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #B4B4B3;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li{
+    display: inline;
+    padding: 2px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style: none;
+    font-size: 15px;
+    color: #000;
+    background-color: #EBE4D1;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+nav ul li a:hover{
+    color: #fff;
+    background-color: orange;
+}
+
+header .container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87.1vh;
+    background-image: linear-gradient(#26577C,#B4B4B3);
+}
+
+header .container-header .gambar img{
+    width: 350px;
+    border-radius: 50%;
+}
+
+header .container-header h1{
+    margin-bottom: 10px;
+}
+
+header .container-header .pengenalan button{
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #B4B4B3;
+}
+
+header .container-header .pengenalan button:hover{
+    color: white;
+    background-color: orange;
+}
