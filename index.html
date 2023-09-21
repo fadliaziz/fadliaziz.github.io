@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/img/hacktiv8.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Fadli Aziz</title>
 </head>
 
@@ -17,18 +18,18 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#title">About</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Interest</a></li>
-                <li><a href="">Award</a></li>
+                <li><a href="#expe">Experience</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#skill">Skills</a></li>
+                <li><a href="#inter">Interest</a></li>
+                <li><a href="#award">Award</a></li>
             </ul>
     </nav>
     </div>
     <!-- End Navbar -->
     <!-- Header -->
     <header>
-        <div id="particles-js">
+        <div class="jumbotron">
             <div class="pengenalan">
                 <button onclick="ketik()" id="tombol">Click Me !!!</button>
                 <h1 id="profile"></h1>
@@ -42,18 +43,151 @@
         </div>
     </header>
     <!-- End Header -->
-    <section>
+    <!-- About -->
+    <section class="about">
         <div class="title">About</div>
         <div class="container-about">
-            <div class="img-box">
-                    <img src="assets/img/about.png" alt="" id="title">
+            <div class="img-box" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                <img src="assets/img/about.png" alt="" id="title">
             </div>
             <div class="text">
-                <p>Perkenalkan Nama Saya Fadli Aziz</p>
-                <p>Saya adalah Seorang lulusan<br>SMK PGRI 3 Randudongkal dengan jurusan Teknik Komputer dan Jaringan</p>
+                <p data-aos="fade-up" data-aos-duration="2000" data-aos-delay="1000">Perkenalkan Nama Saya Fadli Aziz
+                </p>
+                <p data-aos="fade-right" data-aos-duration="2000" data-aos-delay="1000">Saya adalah Seorang
+                    lulusan<br>SMK PGRI 3 Randudongkal dengan jurusan Teknik Komputer dan Jaringan</p>
             </div>
         </div>
     </section>
+    <!-- End About -->
+    <!-- Experience -->
+    <section class="expe">
+        <div class="title-expe">Experience</div>
+        <div class="container-expe" id="expe">
+            <div class="expe-box">
+                <div class="box-1"data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
+                    <img src="assets/img/wedeveloper.jpg" alt="">
+                </div>
+                <ul data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <p>Software Developer</p>
+                    <br>
+                    <li>Mengembangkan aplikasi web</li>
+                    <li>erkontribusi pada proyek open source</li>
+                    <li>Membangun aplikasi mobile </li>
+                </ul>
+                <div class="box-2"data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <img src="assets/img/jaringan.jpg" alt="">
+                </div>
+                <ul data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <p>Administrator Jaringan</p>
+                    <br>
+                    <li>Mengelola jaringan komputer</li>
+                    <li>Menangani keamanan jaringan</li>
+                    <li>Menyusun kebijakan keamanan jaringan </li>
+                </ul>
+                <div class="box-3"data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <img src="assets/img/basisdata.jpg" alt="">
+                </div>
+                <ul data-aos="fade-right" data-aos-duration="2000" data-aos-delay="100">
+                    <p>Pengelola Basis Data</p>
+                    <br>
+                    <li>Merancang, mengelola, dan memelihara basis data</li>
+                    <li>Memastikan ketersediaan dan keamanan data</li>
+                    <li>Mengoptimalkan kinerja database </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- End Experience -->
+    <!-- Education -->
+    <section class="edu">
+        <div class="title-edu" id="edu">Education</div>
+        <div class="container-edu">
+            <div class="edu-1"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">SD Negri 1 Karangmoncol
+                <p>tahun 2009 - 2015</p>
+            </div>
+            <div class="panah-1">
+                <img src="assets/img/panah.png" alt="">
+            </div>
+            <div class="edu-2"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">SMP Negri 1 Randudongkal
+                <p>tahun 2015 - 2018</p>
+            </div>
+            <div class="panah-2">
+                <img src="assets/img/panah.png" alt="">
+            </div>
+            <div class="edu-3"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="500">SMK PGRI 3 Randudongkal
+                <p>tahun 2018 - 2021</p>
+            </div>
+        </div>
+    </section>
+    <!-- end education -->
+    <!-- Skill -->
+    <section class="skill">
+        <div class="title-skill" id="skill">Skills</div>
+        <div class="container-skill">
+            <div class="skill-1"data-aos="flip-right" data-aos-duration="2000" data-aos-delay="100">
+                <img src="assets/img/html-5.png" alt="">
+            </div>
+            <div class="skill-2"data-aos="flip-right" data-aos-duration="2000" data-aos-delay="300">
+                <img src="assets/img/css-3.png" alt="">
+            </div>
+            <div class="skill-3"data-aos="flip-right" data-aos-duration="2000" data-aos-delay="500">
+                <img src="assets/img/js.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- end Skill -->
+    <!-- Interest -->
+    <section class="inter">
+        <div class="title-inter" id="inter">Interest</div>
+        <div class="container-inter">
+            <div class="inter-1"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="200">
+                <div class="child">
+                    <img src="assets/img/web dev.jpg" alt="">
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="inter-2"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
+                <div class="child">
+                    <img src="assets/img/editing vidio.jpg" alt="">
+                    <p>Editing Video</p>
+                </div>
+            </div>
+            <div class="inter-3"data-aos="fade-up" data-aos-duration="2000" data-aos-delay="600">
+                <div class="child">
+                    <img src="assets/img/music.jpg">
+                    <p>Music</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Interest -->
+    <!-- Awards -->
+    <section class="award">
+        <div class="title-award" id="award">Awards</div>
+        <div class="container-award">
+            <div class="award-1">
+                <div class="child">
+                    <img src="assets/img/awards.png" alt=""data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    <a href="https://www.dicoding.com/certificates/L4PQGEWV2ZO1">
+                        <p>Saya Berhasil Menyelesaikan
+                            <br>Belajar Dasar Pemrograman Web Di dicoding
+                        </p>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Awards -->
+    <!-- footer -->
+    <footer>
+        <p>Made By Fadli Aziz Hacktive8 &copy; 2023 </p>
+    </footer>
+    <!-- end footer -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
 </body>
 
