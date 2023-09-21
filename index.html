@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portofolio Fadli Aziz</title>
+    <link rel="icon" href="assets/img/hacktiv8.png">
+    <title>Fadli Aziz</title>
 </head>
-<body>
+
+<body id="home">
     <!-- Navbar -->
-    <div class="container-navbar">
-        <h1>Portofolio</h1>
-        <nav>
+    <nav class="navbar">
+        <div class="container-navbar">
+            <h1>Portofolio</h1>
             <ul>
-                <li><a href="">About</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#title">About</a></li>
                 <li><a href="">Experience</a></li>
                 <li><a href="">Education</a></li>
                 <li><a href="">Skills</a></li>
                 <li><a href="">Interest</a></li>
                 <li><a href="">Award</a></li>
             </ul>
-        </nav>
+    </nav>
     </div>
     <!-- End Navbar -->
     <!-- Header -->
     <header>
-        <div class="container-header">
+        <div id="particles-js">
             <div class="pengenalan">
-                <button onclick="ketik()" id="tombol">Click Me Plz</button>
+                <button onclick="ketik()" id="tombol">Click Me !!!</button>
                 <h1 id="profile"></h1>
-                <h3>Saya Sedang Belajar </h3>
-                <h3>Fundemental Web Programming di Hacktiv8</h3>
+                <p>Saya Sedang Belajar </h3>
+                <p>Fundemental Web Programming di Hacktiv8</p>
+                <p>Web Deveoper | Frontend | Hacktiv8</p>
             </div>
             <div class="gambar">
                 <img src="assets/img/profile.png" alt="">
@@ -37,6 +42,19 @@
         </div>
     </header>
     <!-- End Header -->
+    <section>
+        <div class="title">About</div>
+        <div class="container-about">
+            <div class="img-box">
+                    <img src="assets/img/about.png" alt="" id="title">
+            </div>
+            <div class="text">
+                <p>Perkenalkan Nama Saya Fadli Aziz</p>
+                <p>Saya adalah Seorang lulusan<br>SMK PGRI 3 Randudongkal dengan jurusan Teknik Komputer dan Jaringan</p>
+            </div>
+        </div>
+    </section>
     <script src="js/script.js"></script>
 </body>
+
 </html>

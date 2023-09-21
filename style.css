@@ -4,11 +4,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Poppins', sans-serif;;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
     background-color: #26577C;
+}
+
+
+.navbar{
+    position: sticky;
+    top: 0%;
 }
 
 .container-navbar{
@@ -18,54 +25,109 @@ body{
     align-items: center;
     background-color: #B4B4B3;
     border-radius: 0 0 20px 20px;
-    border-bottom: 1px solid black;
+    border-bottom: 5px solid black;
 }
 
-nav ul li{
+.container-navbar ul li{
     display: inline;
     padding: 2px;
 }
 
-nav ul li a{
+.container-navbar ul li a{
     text-decoration: none;
     list-style: none;
     font-size: 15px;
     color: #000;
     background-color: #EBE4D1;
-    padding: 5px;
+    padding: 7px;
     border: 1px solid black;
     border-radius: 5px;
 }
 
-nav ul li a:hover{
+.container-navbar ul li a:hover{
     color: #fff;
     background-color: orange;
 }
 
-header .container-header{
+header{
+    background-image: linear-gradient(#26577C,#EBE4D1 );
+}
+
+header #particles-js{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 87.1vh;
-    background-image: linear-gradient(#26577C,#B4B4B3);
+    height: 90vh;
 }
 
-header .container-header .gambar img{
+header #particles-js .gambar img{
     width: 350px;
     border-radius: 50%;
 }
 
-header .container-header h1{
+header #particles-js h1{
     margin-bottom: 10px;
 }
 
-header .container-header .pengenalan button{
+header #particles-js .pengenalan button{
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #B4B4B3;
 }
 
-header .container-header .pengenalan button:hover{
+header #particles-js .pengenalan button:hover{
     color: white;
     background-color: orange;
+}
+
+header #particles-js .pengenalan p {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+header #particles-js .pengenalan p:last-child{
+    font-weight: normal;
+}
+section .title{
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    border-top: 5px solid black;
+    background-color: #B4B4B3;
+}
+
+section .container-about{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#26577C,#EBE4D1 );
+    border-radius: 0px 1000px 0px 0px;
+}
+
+section .container-about .img-box{
+    width: 33%;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-image: linear-gradient(#26577C,#EBE4D1 );
+    box-shadow: 10px 10px 5px;
+}
+
+section .container-about .img-box img{
+    margin-left: 5px;
+    margin-bottom: 60px;
+}
+
+section .container-about .text{
+    width: 30%;
+    margin-top: 90px;
+}
+
+section .container-about .text p:first-child{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+section .container-about .text p{
+    font-size: 20px;
 }
